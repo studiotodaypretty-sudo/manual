@@ -163,11 +163,27 @@ header p { font-size: 12px; opacity: 0.6; margin-top: 4px; }
           <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;line-height:1.7;">
             <div style="display:flex;gap:10px;align-items:flex-start;">
               <span style="background:#1a1a2e;color:white;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px;">1</span>
-              <div>위 섭외 키워드 목록에서 네이버 검색</div>
+              <div>아래 <strong>섭외 키워드 목록</strong>에서 키워드 선택 → 네이버 검색
+                <div style="margin-top:6px;">
+                  <button class="toggle-btn" onclick="toggleSection(this)" style="font-size:12px;padding:6px 12px;border-radius:8px;width:auto;">📋 섭외 키워드 목록 보기 ▼</button>
+                  <div class="toggle-content" style="padding:10px 0 0 0;">
+                    <div class="kw-group"><h4>타겟 키워드</h4><div class="tags"><span class="tag">잠실 셀프사진관</span><span class="tag">송파 셀프사진관</span><span class="tag">드레스대여 스튜디오</span><span class="tag">서울 셀프 웨딩 스튜디오</span><span class="tag">야구 유니폼 촬영</span></div></div>
+                    <div class="kw-group"><h4>우선순위 1 — 직접 타겟</h4><div class="tags"><span class="tag">잠실 셀프사진관</span><span class="tag">송파 셀프사진관</span><span class="tag">드레스대여 스튜디오</span><span class="tag">서울 셀프웨딩 스튜디오</span><span class="tag">서울 셀프웨딩</span></div></div>
+                    <div class="kw-group"><h4>우선순위 2 — 카페/맛집/기타</h4><div class="tags"><span class="tag">잠실 카페</span><span class="tag">송리단길 카페</span><span class="tag">롯데월드몰 맛집</span></div></div>
+                    <div class="kw-group"><h4>섭외키워드 (잠실)</h4><div class="tags"><span class="tag">서울 셀프웨딩</span><span class="tag">서울 셀프웨딩 스튜디오</span><span class="tag">커플 드레스 촬영 서울</span><span class="tag">잠실 셀프사진관</span><span class="tag">잠실 놀거리</span><span class="tag">잠실 실내데이트</span><span class="tag">잠실 네컷사진</span><span class="tag">잠실 조용한카페</span><span class="tag">잠실 넓은카페</span><span class="tag">잠실 데이트코스</span><span class="tag">잠실 카페 추천</span><span class="tag">잠실역 데이트</span><span class="tag">잠실 데이트 맛집</span><span class="tag">잠실 와인</span><span class="tag">잠실 공방</span><span class="tag">잠실 브런치</span><span class="tag">잠실 팝업스토어</span><span class="tag">잠실 야구장</span></div></div>
+                    <div class="kw-group"><h4>섭외키워드 (송리단길)</h4><div class="tags"><span class="tag">송리단길 셀프사진관</span><span class="tag">송리단길 놀거리</span><span class="tag">송리단길 실내데이트</span><span class="tag">송리단길 네컷사진</span><span class="tag">송리단길 조용한카페</span><span class="tag">송리단길 넓은카페</span><span class="tag">송리단길 데이트코스</span><span class="tag">송리단길 카페 추천</span><span class="tag">송리단길 데이트</span><span class="tag">송리단길 데이트 맛집</span><span class="tag">송리단길 와인</span><span class="tag">송리단길 공방</span><span class="tag">송리단길 브런치</span></div></div>
+                    <div class="kw-group"><h4>섭외키워드 (송파)</h4><div class="tags"><span class="tag">송파 셀프사진관</span><span class="tag">송파 놀거리</span><span class="tag">송파 실내데이트</span><span class="tag">송파 조용한카페</span><span class="tag">송파 넓은카페</span><span class="tag">송파 데이트코스</span><span class="tag">송파 카페 추천</span><span class="tag">송파역 데이트</span><span class="tag">송파 데이트 맛집</span><span class="tag">송파 브런치</span></div></div>
+                    <div class="kw-group"><h4>기타</h4><div class="tags"><span class="tag">롯데월드몰 맛집</span><span class="tag">롯데월드몰 팝업</span></div></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div style="display:flex;gap:10px;align-items:flex-start;">
               <span style="background:#1a1a2e;color:white;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px;">2</span>
-              <div>메인 or 블로그 탭 <strong>1~30위</strong> 블로그 링크 복사<br><span style="font-size:12px;color:#e74c3c;">글 목록이 중구난방이면 기자단 → 패스</span><br><span style="font-size:12px;color:#6e6e73;">최근 3개월 내 포스팅 있는 블로거만 / 뷰티·웨딩·육아·라이프 위주</span></div>
+              <div>메인 or 블로그 탭 <strong>1~30위</strong> 블로그 링크 복사<br>
+                <span style="font-size:12px;color:#6e6e73;">최근 3개월 내 포스팅 있는 블로거만 / 뷰티·웨딩·육아·라이프 위주</span><br>
+                <span style="font-size:12px;color:#e74c3c;">※ 참고: 글 목록에 주제·지역이 중구난방이면 기자단 → 패스 (원고료 받고 글만 써주는 블로거. 찐 체험단 아님)</span>
+              </div>
             </div>
             <div style="display:flex;gap:10px;align-items:flex-start;">
               <span style="background:#1a1a2e;color:white;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px;">3</span>
@@ -175,33 +191,13 @@ header p { font-size: 12px; opacity: 0.6; margin-top: 4px; }
             </div>
             <div style="display:flex;gap:10px;align-items:flex-start;">
               <span style="background:#1a1a2e;color:white;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px;">4</span>
-              <div>① 블로거 ID + @naver.com 으로 이메일 발송<br>② 반송 또는 무응답 시 블로그 <strong>비밀댓글</strong>로 연락<br><span style="font-size:12px;color:#6e6e73;">아래 제안서 템플릿 참고</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row"><div class="label">월 한도</div><div class="value"><span class="tag red">월 최대 8팀</span> — 마감 시 다음 달로 안내<br>
-          <div style="background:#f5f5f7;border-radius:8px;padding:10px 12px;margin-top:8px;font-size:12px;line-height:1.7;">
-            💬 "안녕하세요! 제안 감사드려요 😊 이번 달은 체험단 일정이 모두 마감되었어요. 다음 달 일정으로 진행해드려도 괜찮으실까요?"
-          </div>
-        </div></div>
-      <div class="toggle">
-        <button class="toggle-btn" onclick="toggleSection(this)">📋 섭외 키워드 목록 보기</button>
-        <div class="toggle-content">
-          <div class="kw-group"><h4>타겟 키워드</h4><div class="tags"><span class="tag">잠실 셀프사진관</span><span class="tag">송파 셀프사진관</span><span class="tag">드레스대여 스튜디오</span><span class="tag">서울 셀프 웨딩 스튜디오</span><span class="tag">야구 유니폼 촬영</span></div></div>
-          <div class="kw-group"><h4>우선순위 1 — 직접 타겟</h4><div class="tags"><span class="tag">잠실 셀프사진관</span><span class="tag">송파 셀프사진관</span><span class="tag">드레스대여 스튜디오</span><span class="tag">서울 셀프웨딩 스튜디오</span><span class="tag">서울 셀프웨딩</span></div></div>
-          <div class="kw-group"><h4>우선순위 2 — 카페/맛집/기타</h4><div class="tags"><span class="tag">잠실 카페</span><span class="tag">송리단길 카페</span><span class="tag">롯데월드몰 맛집</span></div></div>
-          <div class="kw-group"><h4>섭외키워드 (잠실)</h4><div class="tags"><span class="tag">서울 셀프웨딩</span><span class="tag">서울 셀프웨딩 스튜디오</span><span class="tag">커플 드레스 촬영 서울</span><span class="tag">잠실 셀프사진관</span><span class="tag">잠실 놀거리</span><span class="tag">잠실 실내데이트</span><span class="tag">잠실 네컷사진</span><span class="tag">잠실 조용한카페</span><span class="tag">잠실 넓은카페</span><span class="tag">잠실 데이트코스</span><span class="tag">잠실 카페 추천</span><span class="tag">잠실역 데이트</span><span class="tag">잠실 데이트 맛집</span><span class="tag">잠실 와인</span><span class="tag">잠실 공방</span><span class="tag">잠실 브런치</span><span class="tag">잠실 팝업스토어</span><span class="tag">잠실 야구장</span></div></div>
-          <div class="kw-group"><h4>섭외키워드 (송리단길)</h4><div class="tags"><span class="tag">송리단길 셀프사진관</span><span class="tag">송리단길 놀거리</span><span class="tag">송리단길 실내데이트</span><span class="tag">송리단길 네컷사진</span><span class="tag">송리단길 조용한카페</span><span class="tag">송리단길 넓은카페</span><span class="tag">송리단길 데이트코스</span><span class="tag">송리단길 카페 추천</span><span class="tag">송리단길 데이트</span><span class="tag">송리단길 데이트 맛집</span><span class="tag">송리단길 와인</span><span class="tag">송리단길 공방</span><span class="tag">송리단길 브런치</span></div></div>
-          <div class="kw-group"><h4>섭외키워드 (송파)</h4><div class="tags"><span class="tag">송파 셀프사진관</span><span class="tag">송파 놀거리</span><span class="tag">송파 실내데이트</span><span class="tag">송파 조용한카페</span><span class="tag">송파 넓은카페</span><span class="tag">송파 데이트코스</span><span class="tag">송파 카페 추천</span><span class="tag">송파역 데이트</span><span class="tag">송파 데이트 맛집</span><span class="tag">송파 브런치</span></div></div>
-          <div class="kw-group"><h4>기타</h4><div class="tags"><span class="tag">롯데월드몰 맛집</span><span class="tag">롯데월드몰 팝업</span></div></div>
-        </div>
-      </div>
-      <div class="toggle">
-        <button class="toggle-btn" onclick="toggleSection(this)">✉️ 제안서 템플릿 보기</button>
-        <div class="toggle-content">
-          <div style="background:#fff3cd;border-left:4px solid #f5a623;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:12px;font-size:13px;font-weight:600;color:#856404;">
-            ⚠️ 발송 전 반드시 확인! <span style="font-weight:400;">{블로거 이름}을 실제 블로거 이름으로 수정하세요.<br>제목 1곳 + 본문 3곳, 총 4곳을 바꿔야 합니다. 하나라도 빠지면 복붙한 티가 나고 블로거가 바로 알아챕니다.</span>
-          </div>
+              <div>① 블로거 ID + @naver.com 으로 이메일 발송<br>② 반송 또는 무응답 시 블로그 <strong>비밀댓글</strong>로 연락
+                <div style="margin-top:8px;">
+                  <button class="toggle-btn" onclick="toggleSection(this)" style="font-size:12px;padding:6px 12px;border-radius:8px;width:auto;">✉️ 제안서 템플릿 보기 ▼</button>
+                  <div class="toggle-content" style="padding:10px 0 0 0;">
+                    <div style="background:#fff3cd;border-left:4px solid #f5a623;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:12px;font-size:13px;font-weight:600;color:#856404;">
+                      ⚠️ 발송 전 반드시 확인! <span style="font-weight:400;">{블로거 이름}을 실제 블로거 이름으로 수정하세요.<br>제목 1곳 + 본문 3곳, 총 4곳을 바꿔야 합니다. 하나라도 빠지면 복붙한 티가 나고 블로거가 바로 알아챕니다.</span>
+                    </div>
           <div style="background:#f5f5f7;border-radius:12px;padding:16px;font-size:13px;line-height:1.8;">
             <p style="margin-bottom:8px;"><strong>제목:</strong> [체험 제안] 스튜디오 오늘,예쁨 × {블로거 이름} 협업 제안드립니다</p>
             <hr style="border:none;border-top:1px solid #e5e5ea;margin:10px 0;">
@@ -231,8 +227,17 @@ header p { font-size: 12px; opacity: 0.6; margin-top: 4px; }
             <p style="margin-top:8px;color:#1d1d1f;">감사합니다.<br>스튜디오 오늘,예쁨 드림</p>
           </div>
           <button onclick="copyProposal(this)" style="margin-top:10px;background:#1a1a2e;color:white;border:none;border-radius:10px;padding:8px 16px;font-size:13px;cursor:pointer;width:100%;">✉️ 전체 복사</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="row"><div class="label">월 한도</div><div class="value"><span class="tag red">월 최대 8팀</span> — 마감 시 다음 달로 안내<br>
+          <div style="background:#f5f5f7;border-radius:8px;padding:10px 12px;margin-top:8px;font-size:12px;line-height:1.7;">
+            💬 "안녕하세요! 제안 감사드려요 😊 이번 달은 체험단 일정이 모두 마감되었어요. 다음 달 일정으로 진행해드려도 괜찮으실까요?"
+          </div>
+        </div></div>
       </div>
     </div>
     <div class="section">
